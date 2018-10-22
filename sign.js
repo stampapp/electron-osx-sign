@@ -155,6 +155,7 @@ function signApplicationAsync (opts) {
       if (opts.timestamp) {
         args.push('--timestamp=' + opts.timestamp)
       }
+      args.push('--options', 'runtime')
 
       var promise
       if (opts.entitlements) {
